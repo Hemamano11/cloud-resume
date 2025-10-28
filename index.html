@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hemalatha M | Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 40px;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .contact {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hemalatha M</h1>
+  <div class="contact">
+    📧 Email: <a href="mailto:hemalathamanogar@gmail.com">hemalathamanogar@gmail.com</a><br>
+    📱 Mobile: 9943921109
+     👁️ Visitor Count: <span id="visitor-count">Loading...</span>
+  </div>
+
+  <div class="section">
+    <h2>🎓 Education</h2>
+    <p><strong>Jeppiaar Institute of Technology</strong><br>
+    B.E in Electronics and Communication Engineering<br>
+    CGPA: 7.8%<br>
+    Chennai, August 2021 – April 2025</p>
+  </div>
+
+  <div class="section">
+    <h2>🛠️ Skills</h2>
+    <ul>
+      <li><strong>Languages:</strong> Python, C, C++</li>
+      <li><strong>Web Technologies:</strong> HTML, CSS, JavaScript, Node.js, React.js, Flask</li>
+      <li><strong>Cloud & DevOps:</strong> AWS (EC2, S3, IAM, VPC)</li>
+      <li><strong>Databases:</strong> MySQL, SQLite, PostgreSQL</li>
+      <li><strong>Libraries & Tools:</strong> NumPy, Matplotlib, T5 (NLP), Jupyter Notebook</li>
+      <li><strong>Automation:</strong> UiPath RPA</li>
+      <li><strong>Tools:</strong> Visual Studio Code, MS Office Suite</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>💼 Internships</h2>
+    <p><strong>Python Developer Intern – Trios Technology Pvt Ltd</strong></p>
+    <ul>
+      <li>Analyzed problems and worked with teams to develop solutions</li>
+      <li>Applied industry concepts to real-world projects</li>
+      <li>Collaborated with fellow interns on group projects and presentations</li>
+      <li>Gained hands-on experience in various software programs</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>📁 Projects</h2>
+
+    <h3>Adaptive Question Generation using NLP</h3>
+    <ul>
+      <li>Built backend using Flask & SQLite for user authentication and test data storage</li>
+      <li>Integrated T5 NLP model to generate contextually accurate questions</li>
+      <li>Implemented keyword extraction using NLP pipelines</li>
+      <li>Enabled PDF/DOCX export of generated questions</li>
+    </ul>
+
+    <h3>Tourist Guide Website – Kanchipuram Temples</h3>
+    <ul>
+      <li>Created layout using HTML5 & CSS3 with responsive design</li>
+      <li>Built intuitive navigation and cultural content</li>
+      <li>Live site: <a href="https://celebrated-fenglisu-2bed8f.netlify.app" target="_blank">Visit Website</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>📜 Certificates</h2>
+    <ul>
+      <li>Advance Diploma in Python Technology – Apollo Computer Education</li>
+      <li>AWS Essentials – Certificate of Completion</li>
+      <li>AWS & DevOps Course – Completion Certificate</li>
+      <li>Workshop on Azure Fundamentals – IEEE & IETE</li>
+      <li>RPA Foundation Course – Certificate</li>
+      <li>Typewriting Senior Grade – English & Tamil</li>
+    </ul>
+  </div>
+<script>
+  fetch('https://your-api-id.execute-api.ap-south-1.amazonaws.com/prod/visitor')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('visitor-count').innerText = data.count;
+    })
+    .catch(error => {
+      console.error('Error fetching visitor count:', error);
+      document.getElementById('visitor-count').innerText = 'N/A';
+    });
+</script>
+<div class="section">
+  <h2>📥 Download My Resume</h2>
+  <a href=https://hemalatha-resume-site.s3.ap-southeast-1.amazonaws.com/M_Hemalatha_resume_2.pdf download>
+    <button>Download PDF</button>
+  </a>
+</div>
+</body>
+</html>
