@@ -19,6 +19,3 @@ This is my cloud-hosted resume website built using AWS services. It showcases my
 🔗 Live Site
 [View my resume website](https://d123abcxyz.cloudfront.net)
 
-🎯 Purpose
-This project reflects my transition from Mechanical to Computer Science Engineering and showcases my skills in AWS, DevOps, and web development. It’s designed to support my job search and technical growth.
-
